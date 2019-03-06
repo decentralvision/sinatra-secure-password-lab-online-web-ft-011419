@@ -1,0 +1,1 @@
+class AddBalanceToUsers < ActiveRecord::Migration
