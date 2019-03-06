@@ -1,1 +1,1 @@
-class AddBalanceToUsers < ActiveRecord::Migration
+class AddBalanceToUsers < ActiveRecord::Migration[]
