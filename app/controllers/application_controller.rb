@@ -25,7 +25,6 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/account' do
-    binding.pry
     @user = User.find(session[:user_id])
     erb :account
   end
@@ -37,6 +36,7 @@ class ApplicationController < Sinatra::Base
 
   post "/login" do
     if !params["username"].empty? && !params["password"].empty?
+      binding.pry
       redirect '/account'
     else
       redirect '/failure'
