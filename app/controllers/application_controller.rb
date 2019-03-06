@@ -36,7 +36,7 @@ class ApplicationController < Sinatra::Base
 
   post "/login" do
     if !params["username"].empty? && !params["password"].empty?
-      redirect 'account'
+      redirect '/account'
       binding.pry
     else
       redirect '/failure'
