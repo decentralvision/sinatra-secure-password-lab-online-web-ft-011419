@@ -1,5 +1,8 @@
-class AddBalanceToUsers < ActiveRecord::Migration
+class CreateUsers < ActiveRecord::Migration
   def change
-    add_column :users, :balance, :real
+    create_table :users do |t|
+      t.string :username
+      t.string :password_digest
+    end
   end
 end
